@@ -1,4 +1,4 @@
-import { Categories, Cursos, Videos } from "@/config/interface";
+import { Categories, Cursos, Videos } from "@/interface";
 import VideoYoutube from "@/components/videos/VideoYoutube";
 import fondo from "/public/image/fondo-curso.png"
 import { notFound } from "next/navigation";

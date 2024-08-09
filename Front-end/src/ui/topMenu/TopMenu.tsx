@@ -1,4 +1,4 @@
-import { Categories } from "@/config/interface"
+import { Categories } from "@/interface"
 import { CiSearch } from "react-icons/ci"
 import Link from "next/link"
 import axios from "axios"

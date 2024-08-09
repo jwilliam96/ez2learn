@@ -1,5 +1,5 @@
 
-import { Cursos, Videos } from "@/config/interface";
+import { Cursos, Videos } from "@/interface";
 import imagenVideo from "/public/image/video-image.png"
 import VideoYoutube from "../videos/VideoYoutube";
 import Link from "next/link";

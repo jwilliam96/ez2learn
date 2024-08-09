@@ -1,10 +1,10 @@
 "use client"
 
+import { IconCartIcon } from "@/components";
 import { useCart } from "@/store/cart";
-import { IconCartIcon } from "../icon/Icons";
 import Link from "next/link";
 
-export default function CartMenu() {
+export function CartMenu() {
 
     const cart = useCart(state => state.cart)
 

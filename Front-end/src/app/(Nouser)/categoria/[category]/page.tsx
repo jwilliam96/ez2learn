@@ -1,8 +1,8 @@
 
-import { Categories, Cursos } from "@/config/interface";
+import { Categories, Cursos } from "@/interface";
 import imageFondo from "/public/image/fondo-category.png"
 import { notFound } from "next/navigation";
-import { Cards, UseSwiper } from "@/components";
+import { UseSwiper } from "@/components";
 import axios from "axios";
 import Image from "next/image";
 

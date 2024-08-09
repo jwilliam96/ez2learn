@@ -1,10 +1,10 @@
 "use client"
 
 import { useCart } from "@/store/cart";
-import CartCard from "./CartCard";
 import Link from "next/link";
+import { CartCard } from "./CartCard";
 
-export default function Cart() {
+export function Cart() {
 
     const cursos = useCart(state => state.cart)
     const suma = cursos.reduce((total, num) => total + num.price, 0);

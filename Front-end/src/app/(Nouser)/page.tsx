@@ -2,25 +2,15 @@
 import { SvgAprende, SvgEnseña, SvgLandingOne, SvgLandingTwo } from "@/components/svg/SvgIcons"
 import imageFondoCategory from "/public/landing/fondoCategory.png"
 import imageFondoAprende from "/public/landing/fondoAprende.png"
-import { Categories, Cursos, Videos } from "@/config/interface"
 import imageFondoEnseña from "/public/landing/fondoEnseña.png"
-import CategoryCard from "../ui/categorias/CategoryCard";
+import CategoryCard from "../../components/categorias/CategoryCard";
 import imageAprende from "/public/landing/imgAprende.png"
 import imageEnseña from "/public/landing/imgEnseña.png"
 import imageHeader from "/public/landing/header.png"
-import { UseSwiper } from "@/components"
 import Image from "next/image";
-import axios from "axios"
 
 export default async function Home() {
 
-  const dbVideos: Videos[] = await axios.get("https://c19-72-t-python-react.onrender.com/videos")
-    .then(res => res.data)
-    .catch(err => console.log(err))
-
-  const dbCursos: Cursos[] = await axios.get("https://c19-72-t-python-react.onrender.com/cursos")
-    .then(res => res.data)
-    .catch(err => console.log(err))
 
   return (
     <main >
@@ -87,7 +77,7 @@ export default async function Home() {
           <h2 className="text-2xl font-bold text-texto-green">Cursos Populares</h2>
           <span className="text-texto-green">Aprende algo nuevo o mejora tus habilidades</span>
 
-          <UseSwiper cursos={dbCursos} dbVideos={dbVideos} id="bf9f838b-c82f-41fd-acfb-29d16389d4e1" />
+          {/* <UseSwiper cursos={dbCursos} dbVideos={dbVideos} id="bf9f838b-c82f-41fd-acfb-29d16389d4e1" /> */}
 
         </div>
       </section>

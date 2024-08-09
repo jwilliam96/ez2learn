@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from "swiper/modules"
-import { Cursos, Videos } from '@/config/interface';
+import { Cursos, Videos } from '@/interface';
 
 // Import Swiper styles
 import 'swiper/css';

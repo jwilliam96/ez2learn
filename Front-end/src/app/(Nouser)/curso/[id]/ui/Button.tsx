@@ -1,6 +1,6 @@
 "use client"
 
-import { Cursos, Videos } from "@/config/interface"
+import { Cursos, Videos } from "@/interface"
 import { useCart } from "@/store/cart"
 
 interface Props {

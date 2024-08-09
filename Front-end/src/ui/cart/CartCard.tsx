@@ -16,7 +16,7 @@ interface Cart {
     price: number
 }
 
-export default function CartCard({ curso }: Prop) {
+export function CartCard({ curso }: Prop) {
 
     const eliminar = useCart(state => state.eliminar)
     const handleDele = () => {

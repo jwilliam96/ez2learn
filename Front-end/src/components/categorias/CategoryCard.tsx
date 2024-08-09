@@ -1,4 +1,4 @@
-import Helps from "@/helpers/Helps"
+import Helps from "@/utils/Helps"
 import Link from "next/link"
 
 
