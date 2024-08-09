@@ -3,7 +3,7 @@ import { SvgAprende, SvgEnseña, SvgLandingOne, SvgLandingTwo } from "@/componen
 import imageFondoCategory from "/public/landing/fondoCategory.png"
 import imageFondoAprende from "/public/landing/fondoAprende.png"
 import imageFondoEnseña from "/public/landing/fondoEnseña.png"
-import CategoryCard from "../../components/categorias/CategoryCard";
+import CategoryCard from "../../components/cards/CategoryCard";
 import imageAprende from "/public/landing/imgAprende.png"
 import imageEnseña from "/public/landing/imgEnseña.png"
 import imageHeader from "/public/landing/header.png"

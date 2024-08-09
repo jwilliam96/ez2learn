@@ -1,7 +1,7 @@
 "use client"
 
 import { Cursos, Videos } from "@/interface"
-import { useCart } from "@/store/cart"
+import { useCart } from "@/utils/store/cart"
 
 interface Props {
     curso: Cursos

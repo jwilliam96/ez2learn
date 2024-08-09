@@ -1,7 +1,3 @@
-export { Cart } from "./cart/Cart"
-export { CartCard } from "./cart/CartCard"
+
 export { Footer } from "./footer/Footer"
-export { Sidebar } from "./sidebar/sidebar"
 export { SkeletonCard } from "./skeleton/SkeletonCard"
-export { CartMenu } from "./topMenu/CartMenu"
-export { TopMenu } from "./topMenu/TopMenu"

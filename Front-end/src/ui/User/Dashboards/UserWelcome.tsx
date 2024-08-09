@@ -2,7 +2,7 @@ import Link from "next/link";
 import imagen from "../../../public/landing/imgAprende.png";
 import Image from "next/image";
 
-export function Dashboard() {
+export function UserWelcome() {
   return (
 
     <div className="flex flex-col flex-grow p-6 text-texto-morado">

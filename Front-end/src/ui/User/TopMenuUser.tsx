@@ -5,7 +5,7 @@ import Link from "next/link"
 import axios from "axios"
 import imageUser from "/public/image/imageUser.jpg"
 import Image from "next/image"
-import CartMenuUser from "./CartMenuUser"
+import CartMenuUser from "../../../ui/User/cart/CartMenuUser"
 
 
 export async function TopMenuUser() {

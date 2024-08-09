@@ -2,7 +2,7 @@
 
 import { IconDelete } from "@/components";
 import VideoYoutube from "@/components/videos/VideoYoutube";
-import { useCart } from "@/store/cart";
+import { useCart } from "@/utils/store/cart";
 
 interface Prop {
     curso: Cart
@@ -16,7 +16,7 @@ interface Cart {
     price: number
 }
 
-export default function CartCard({ curso }: Prop) {
+export function CartCard({ curso }: Prop) {
 
     const eliminar = useCart(state => state.eliminar)
     const handleDele = () => {

@@ -1,10 +1,8 @@
 
 import { Cursos, Videos } from "@/interface";
-import imagenVideo from "/public/image/video-image.png"
 import VideoYoutube from "../videos/VideoYoutube";
 import Link from "next/link";
-import Image from "next/image";
-import { IconTime } from "../icon/Icons";
+
 
 interface Prop {
   curso: Cursos

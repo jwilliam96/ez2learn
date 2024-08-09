@@ -2,7 +2,7 @@
 
 import { IconDelete } from "@/components";
 import VideoYoutube from "@/components/videos/VideoYoutube";
-import { useCart } from "@/store/cart";
+import { useCart } from "@/utils/store/cart";
 
 interface Prop {
     curso: Cart

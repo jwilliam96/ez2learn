@@ -1,6 +1,6 @@
 import Image from "next/image"
 import fondo from "/public/image/fondo-notFound.png"
-import { Cart } from "@/ui"
+import { Cart } from "@/ui/NoUser"
 
 function CartPage() {
     return (

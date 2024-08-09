@@ -1,9 +1,7 @@
-import Image from "next/image";
-import { IconFigma, Sidebar, UseSwiper } from "../index";
-import fondo from "/public/user/fondo.png"
+import { IconFigma, UseSwiper } from "../../../components/index";
 import axios from "axios";
 
-export default async function DashboardCards() {
+export async function Catalogo() {
 
   const categories = [
     { title: "Web Development", icon: <IconFigma className={"w-12 h-12 mb-2"} /> },

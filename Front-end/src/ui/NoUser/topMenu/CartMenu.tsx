@@ -1,15 +1,15 @@
 "use client"
 
 import { IconCartIcon } from "@/components";
-import { useCart } from "@/store/cart";
+import { useCart } from "@/utils/store/cart";
 import Link from "next/link";
 
-export default function CartMenuUser() {
+export function CartMenu() {
 
     const cart = useCart(state => state.cart)
 
     return (
-        <Link href={"/dashboard/cart"} className="relative">
+        <Link href={"/cart"} className="relative">
             {
                 cart.length > 0 && (
                     <div
