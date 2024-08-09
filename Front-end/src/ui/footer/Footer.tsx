@@ -1,6 +1,6 @@
 
+import { IconFacebook, IconFigma, IconInstagram, IconLinkedin, IconYoutube } from "@/components";
 import Link from "next/link";
-import { IconFacebook, IconFigma, IconInstagram, IconLinkedin, IconYoutube } from "../icon/Icons";
 
 export function Footer() {
     return (

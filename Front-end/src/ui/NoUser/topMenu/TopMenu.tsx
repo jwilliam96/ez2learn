@@ -1,15 +1,9 @@
-import { Categories } from "@/interface"
 import { CiSearch } from "react-icons/ci"
 import Link from "next/link"
-import axios from "axios"
-import { IconLogo } from "../icon/Icons"
-import CartMenu from "./CartMenu"
+import { IconLogo } from "@/components"
+import { CartMenu } from "./CartMenu"
 
 export async function TopMenu() {
-
-    const categorias: Categories[] = await axios.get("https://c19-72-t-python-react.onrender.com/categorias")
-        .then(res => res.data)
-        .catch(error => error)
 
     return (
         <div className="border-b bg-fondo">
@@ -34,11 +28,11 @@ export async function TopMenu() {
 
                     <nav className="hidden hover:block group-hover:block absolute z-30 bg-fondo border rounded-lg mt-1">
                         <ul className="grid grid-cols-2 gap-4 w-[500px] p-4">
-                            {
+                            {/* {
                                 categorias.map(category => (
                                     <li key={category.id}><Link href={`/categoria/${category.name_category}`}>{category.name_category}</Link></li>
                                 ))
-                            }
+                            } */}
                         </ul>
                     </nav>
 

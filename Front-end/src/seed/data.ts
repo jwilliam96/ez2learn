@@ -1,3 +1,6 @@
+
+
+
 export const cursos = [
     {
         title: "Introducción al Desarrollo Web",
@@ -9,7 +12,6 @@ export const cursos = [
         sales: 1500,
         price: 19.99,
         duration: "10 horas",
-        lesson: []
     },
     {
         title: "Fundamentos de Ciencia de Datos",

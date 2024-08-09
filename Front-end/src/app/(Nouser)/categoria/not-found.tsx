@@ -1,6 +1,6 @@
 import Image from "next/image"
 import fondoImage from "/public/image/fondo-notFound.png"
-import CategoryCard from "@/components/categorias/CategoryCard";
+import CategoryCard from "@/components/cards/CategoryCard";
 
 export default function NotFound() {
 

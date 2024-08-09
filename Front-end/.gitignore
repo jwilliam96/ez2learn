@@ -41,3 +41,4 @@ video/*
 !video/*.js
 !video/*.ts
 public/_next-video
+.env.local

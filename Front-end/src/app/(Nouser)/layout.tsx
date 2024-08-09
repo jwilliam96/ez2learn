@@ -1,4 +1,5 @@
-import { Footer, TopMenu } from "@/components";
+import { Footer } from "@/ui";
+import { TopMenu } from "@/ui/NoUser";
 
 export default function Layout({
     children
