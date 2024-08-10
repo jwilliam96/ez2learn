@@ -8,12 +8,13 @@ import imageAprende from "/public/landing/imgAprende.png"
 import imageEnseña from "/public/landing/imgEnseña.png"
 import imageHeader from "/public/landing/header.png"
 import Image from "next/image";
-import prisma from "@/lib/prisma";
+import prisma from "../../lib/prisma";
 
 export default async function Home() {
 
   const cursos = await prisma.courses.findMany()
-
+  await prisma.$disconnect();
+  console.log(cursos);
 
   return (
     <main >
