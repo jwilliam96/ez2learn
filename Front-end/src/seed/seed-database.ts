@@ -9,19 +9,31 @@ async function main() {
 
     const { cursos, lessons, categories } = initialData
 
-    const dbCategories = categories.map(category => ({ category }))
-
-    // const categoryData = await prisma.categories.findMany()
-
     // Creación de Tablas
+    const dbCategories = categories.map(category => ({ category }))
 
     await prisma.categories.createMany({
         data: dbCategories
     })
 
-    //  await prisma.courses.createMany({
-    //      data: cursos
-    //  })
+    const categoryData = await prisma.categories.findMany()
+
+    const categoriesMap = categoryData.reduce((map, category) => {
+        map[category.category] = category.id
+        return map
+    }, {} as Record<string, string>)
+
+
+    cursos.forEach(async (curso) => {
+        const { category, ...rest } = curso
+
+        await prisma.courses.create({
+            data: {
+                ...rest,
+                categoryId: categoriesMap[category]
+            }
+        })
+    })
 
 
     console.log("se ejecuto correctamente")
