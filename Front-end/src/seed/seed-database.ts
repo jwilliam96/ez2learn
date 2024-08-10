@@ -19,9 +19,9 @@ async function main() {
         data: dbCategories
     })
 
-    // await prisma.courses.createMany({
-    //     data: cursos
-    // })
+    //  await prisma.courses.createMany({
+    //      data: cursos
+    //  })
 
 
     console.log("se ejecuto correctamente")
