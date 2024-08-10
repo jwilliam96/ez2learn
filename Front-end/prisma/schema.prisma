@@ -25,7 +25,6 @@ model Courses {
   title       String
   description String
   video       String
-  category    String
   rating      Float
   offer       Boolean
   sales       Int
