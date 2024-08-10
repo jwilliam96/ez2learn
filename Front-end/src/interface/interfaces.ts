@@ -1,27 +1,24 @@
-export interface Categories {
-    id: string
-    name_category: string
+
+type category = "Desarrollo Web" | "Ciencia de Datos" | "Desarrollo Movil" | "Lenguaje de Programación" | "Desarrollo de Videojuegos" | "Bases de Datos" | "Testeo de Software" | "Ingeniería de Software" | "Herramientas de Desarrollo" | "Desarrollo No-Code"
+
+export interface Courses {
+    title: string
+    description: string
+    video: string
+    category: category
+    rating: number
+    offer: boolean
+    sales: number
+    price: number
+    duration?: string
 }
 
-export interface Cursos {
-    id: string;
-    name_curso: string;
-    description: string;
-    idioma: string;
-    review: number;
-    price: number;
-    duration_total: number;
-    etiqueta: string;
-    sales: number;
-    trailer: null;
-    id_user: string;
-    id_category: string;
-}
-
-export interface Videos {
-    id: string;
-    name_video: string;
+export interface Lessons {
+    title: string;
     link: string;
-    duration: number;
-    id_curso: string;
+    description: string;
+    duration?: string;
+    documento?: string;
 }
+
+

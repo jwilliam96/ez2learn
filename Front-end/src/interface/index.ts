@@ -1,1 +1,1 @@
-export type { Categories, Cursos, Videos } from "./interfaces"
+export type { Courses, Lessons, Categories } from "./interfaces"
