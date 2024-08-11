@@ -16,13 +16,6 @@ export async function Catalogo() {
     { title: "No-Code Development", icon: <IconFigma className={"w-12 h-12 mb-2"} /> }
   ]
 
-  const dbCursos = await axios.get("https://c19-72-t-python-react.onrender.com/cursos")
-    .then(res => res.data)
-    .catch(err => console.log(err))
-
-  const dbVideos = await axios.get("https://c19-72-t-python-react.onrender.com/videos")
-    .then(res => res.data)
-    .catch(err => console.log(err))
 
 
   return (
@@ -49,7 +42,7 @@ export async function Catalogo() {
           <h2 className="text-xl font-semibold text-texto-morado">Aprende algo nuevo o mejora tus habilidades</h2>
 
           {/* SLIDER  */}
-          <UseSwiper cursos={dbCursos} dbVideos={dbVideos} id="bf9f838b-c82f-41fd-acfb-29d16389d4e1" />
+          {/* <UseSwiper cursos={dbCursos} dbVideos={dbVideos} id="bf9f838b-c82f-41fd-acfb-29d16389d4e1" /> */}
 
         </div>
       </div>

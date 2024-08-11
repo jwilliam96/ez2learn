@@ -1,5 +1,5 @@
 
-import { Categories, Courses, Lessons } from "../interface"
+import { Courses, Lessons } from "../interface"
 
 
 interface SeedData {

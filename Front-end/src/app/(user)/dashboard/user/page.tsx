@@ -1,8 +1,8 @@
-import { Dashboard } from "@/components";
+import { UserWelcome } from "@/ui/User";
 
 
 export default function Page() {
     return (
-        <Dashboard />
+        <UserWelcome />
     );
 }

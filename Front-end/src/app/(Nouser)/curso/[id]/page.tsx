@@ -1,4 +1,3 @@
-import { Categories, Cursos, Videos } from "@/interface";
 import VideoYoutube from "@/components/videos/VideoYoutube";
 import fondo from "/public/image/fondo-curso.png"
 import { notFound } from "next/navigation";
@@ -6,33 +5,34 @@ import { IconStars } from "@/components";
 import Button from "./ui/Button";
 import Image from "next/image";
 import axios from "axios";
+import { Courses, Lessons } from "@prisma/client";
 
 export default async function CursoPage({ params }: { params: { id: string } }) {
 
 
-    const getCursos: Cursos[] = await axios.get("https://c19-72-t-python-react.onrender.com/cursos")
-        .then(res => res.data)
-        .catch(err => console.log(err))
+    // const getCursos: Courses[] = await axios.get("https://c19-72-t-python-react.onrender.com/cursos")
+    //     .then(res => res.data)
+    //     .catch(err => console.log(err))
 
-    const resultado = getCursos.some(cur => cur.id === params.id)
+    // const resultado = getCursos.some(cur => cur.id === params.id)
 
-    if (!resultado) {
-        return notFound()
-    }
+    // if (!resultado) {
+    //     return notFound()
+    // }
 
-    const getVideos: Videos[] = await axios.get("https://c19-72-t-python-react.onrender.com/videos")
-        .then(res => res.data)
-        .catch(err => console.log(err))
+    // const getVideos: Lessons[] = await axios.get("https://c19-72-t-python-react.onrender.com/videos")
+    //     .then(res => res.data)
+    //     .catch(err => console.log(err))
 
-    const getCategorias: Categories[] = await axios.get("https://c19-72-t-python-react.onrender.com/categorias")
-        .then(res => res.data)
-        .catch(err => console.log(err))
+    // const getCategorias: Categories[] = await axios.get("https://c19-72-t-python-react.onrender.com/categorias")
+    //     .then(res => res.data)
+    //     .catch(err => console.log(err))
 
-    const curso: Cursos[] = getCursos.filter(cur => cur.id === params.id)
+    // const curso: Courses[] = getCursos.filter(cur => cur.id === params.id)
 
-    const categoria = getCategorias.filter(category => category.id === curso[0].id_category)
+    // const categoria = getCategorias.filter(category => category.id === curso[0].id_category)
 
-    const video = getVideos.filter(v => v.id_curso === curso[0].id)
+    // const video = getVideos.filter(v => v.id === curso[0].video)
 
 
     return (
@@ -42,14 +42,14 @@ export default async function CursoPage({ params }: { params: { id: string } }) 
             <div className="max-w-[1600px] mx-auto py-8 relative">
 
                 {/* TITLE  */}
-                <span className="text-texto-green">{`Categoria > ${categoria[0].name_category}`}</span>
-                <h2 className="text-6xl font-semibold text-texto-green">{curso[0].name_curso}</h2>
+                {/* <span className="text-texto-green">{`Categoria > ${categoria[0].name_category}`}</span>
+                <h2 className="text-6xl font-semibold text-texto-green">{curso[0].name_curso}</h2> */}
 
 
                 <div className="h-[550px] grid grid-cols-6 gap-20 my-10">
                     {/* VIDEO  */}
                     <div className="col-span-4">
-                        <VideoYoutube videoId={video[0].link} />
+                        {/* <VideoYoutube videoId={video[0].link} /> */}
                     </div>
 
                     {/* DESCRIPTION  */}
@@ -65,8 +65,8 @@ export default async function CursoPage({ params }: { params: { id: string } }) 
                                 ))
                             }
 
-                            <span className="text-center text-5xl font-bold text-green-700 my-6">$ {curso[0].price}.00</span>
-                            <Button curso={curso[0]} video={video[0]} />
+                            {/* <span className="text-center text-5xl font-bold text-green-700 my-6">$ {curso[0].price}.00</span>
+                            <Button curso={curso[0]} video={video[0]} /> */}
                         </div>
                     </div>
                 </div>

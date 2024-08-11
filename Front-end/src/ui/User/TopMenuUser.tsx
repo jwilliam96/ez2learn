@@ -1,18 +1,14 @@
 import { IconNotification } from "@/components"
-import { Categories } from "@/interface"
 import { CiSearch } from "react-icons/ci"
 import Link from "next/link"
 import axios from "axios"
 import imageUser from "/public/image/imageUser.jpg"
 import Image from "next/image"
-import CartMenuUser from "../../../ui/User/cart/CartMenuUser"
+import { CartMenuUser } from "./cart/CartMenuUser"
 
 
 export async function TopMenuUser() {
 
-    const categorias: Categories[] = await axios.get("https://c19-72-t-python-react.onrender.com/categorias")
-        .then(res => res.data)
-        .catch(error => error)
 
     return (
         <div className="border-b border-fondo mb-10">
@@ -33,13 +29,13 @@ export async function TopMenuUser() {
                         <span className="mx-4 text-xl cursor-pointer  text-texto-green bg-fondo rounded-full px-6 py-1.5">Categorías</span>
 
                         <nav className="hidden hover:block group-hover:block absolute z-30 bg-fondo border rounded-lg mt-1 text-texto-green">
-                            <ul className="grid grid-cols-2 gap-4 w-[500px] p-4">
+                            {/* <ul className="grid grid-cols-2 gap-4 w-[500px] p-4">
                                 {
                                     categorias.map(category => (
                                         <li key={category.id}><Link href={`/categoria/${category.name_category}`}>{category.name_category}</Link></li>
                                     ))
                                 }
-                            </ul>
+                            </ul> */}
                         </nav>
                     </div>
 

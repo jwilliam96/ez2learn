@@ -1,6 +1,5 @@
-import { TopMenuUser } from "./ui/TopMenuUser";
+import { Sidebar, TopMenuUser } from "@/ui/User";
 import fondo from "/public/user/fondo.png"
-import { Sidebar } from "@/components";
 import Image from "next/image";
 
 export default function Layout({
