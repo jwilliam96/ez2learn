@@ -14,7 +14,6 @@ export default async function Home() {
 
   const cursos = await prisma.courses.findMany()
   await prisma.$disconnect();
-  console.log(cursos);
 
   return (
     <main >
