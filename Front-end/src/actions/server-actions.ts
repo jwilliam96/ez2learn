@@ -1,6 +1,5 @@
 "use server"
 
-import { Categories } from "@/interface"
 import prisma from "@/lib/prisma"
 
 
@@ -16,5 +15,5 @@ export const getCategories = async () => {
     } catch (error) {
         console.log({ message: "no se pudo traer las categorias" })
     }
-
 }
+

@@ -3,11 +3,10 @@ import Link from "next/link"
 import { IconLogo } from "@/components"
 import { CartMenu } from "./CartMenu"
 import { getCategories } from "@/actions/server-actions"
-import { Categories } from "@/interface"
 
 export async function TopMenu() {
 
-    const categories: Categories[] | undefined = await getCategories()
+    const categories = await getCategories()
 
     return (
         <div className="border-b bg-fondo">
