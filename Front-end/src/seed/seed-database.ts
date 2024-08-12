@@ -4,8 +4,8 @@ import { initialData } from "./data"
 async function main() {
 
     // Eliminar Tablas
-    await prisma.categories.deleteMany()
     await prisma.courses.deleteMany()
+    await prisma.categories.deleteMany()
 
     const { cursos, lessons, categories } = initialData
 
