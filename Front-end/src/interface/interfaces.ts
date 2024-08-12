@@ -11,6 +11,7 @@ export interface Courses {
     sales: number
     price: number
     duration?: string
+    lessons?: Lessons[]
 }
 
 export interface Lessons {
@@ -21,4 +22,7 @@ export interface Lessons {
     documento?: string;
 }
 
-
+export interface Categories {
+    id: string
+    category: string
+}
