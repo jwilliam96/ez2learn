@@ -54,54 +54,6 @@ export const initialData: SeedData = {
                 }
             ]
         },
-        {
-            title: "CSS Avanzado: Flexbox y Grid",
-            description: "Domina las técnicas avanzadas de diseño con CSS, incluyendo Flexbox y Grid.",
-            video: "https://www.youtube.com/watch?v=J4q5hctO6D4",
-            category: "Desarrollo Web",
-            rating: 4.7,
-            offer: false,
-            sales: 1200,
-            price: 24.99,
-            duration: "8 horas",
-            lessons: []
-        },
-        {
-            title: "JavaScript: De Principiante a Avanzado",
-            description: "Lleva tus habilidades de JavaScript al siguiente nivel, cubriendo temas desde lo básico hasta conceptos avanzados.",
-            video: "https://www.youtube.com/watch?v=PkZNo7MFNFg",
-            category: "Desarrollo Web",
-            rating: 4.9,
-            offer: true,
-            sales: 3000,
-            price: 29.99,
-            duration: "15 horas",
-            lessons: []
-        },
-        {
-            title: "Responsive Design con Bootstrap",
-            description: "Aprende a crear sitios web responsivos utilizando el framework Bootstrap.",
-            video: "https://www.youtube.com/watch?v=5GcQtLDGXy8",
-            category: "Desarrollo Web",
-            rating: 4.6,
-            offer: false,
-            sales: 900,
-            price: 14.99,
-            duration: "7 horas",
-            lessons: []
-        },
-        {
-            title: "Desarrollo Web Full Stack con MERN",
-            description: "Crea aplicaciones web completas utilizando MongoDB, Express, React y Node.js.",
-            video: "https://www.youtube.com/watch?v=7CqJlxBYj-M",
-            category: "Desarrollo Web",
-            rating: 4.9,
-            offer: true,
-            sales: 2500,
-            price: 34.99,
-            duration: "20 horas",
-            lessons: []
-        },
 
         //CATEGORIA CIENCIA DE DATOS
         {
@@ -114,56 +66,34 @@ export const initialData: SeedData = {
             sales: 1200,
             price: 24.99,
             duration: "12 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Introducción a Python para Ciencia de Datos",
+                    description: "Domina Python y sus bibliotecas esenciales para la ciencia de datos, como NumPy y Pandas.",
+                    link: "https://www.youtube.com/watch?v=vh0G3rJGzzI",
+                    duration: "10 horas",
+                },
+                {
+                    title: "Análisis de Datos con R",
+                    description: "Aprende a analizar y visualizar datos utilizando el lenguaje de programación R.",
+                    link: "https://www.youtube.com/watch?v=_V8eKsto3Ug",
+                    duration: "9 horas",
+                },
+                {
+                    title: "Machine Learning para Principiantes",
+                    description: "Introducción a los conceptos clave de machine learning y cómo aplicarlos en proyectos.",
+                    link: "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+                    duration: "14 horas",
+                },
+                {
+                    title: "Visualización de Datos con Tableau",
+                    description: "Aprende a crear visualizaciones impactantes y dashboards interactivos utilizando Tableau.",
+                    link: "https://www.youtube.com/watch?v=0SroZ3uOmZE",
+                    duration: "8 horas",
+                },
+            ]
         },
-        {
-            title: "Introducción a Python para Ciencia de Datos",
-            description: "Domina Python y sus bibliotecas esenciales para la ciencia de datos, como NumPy y Pandas.",
-            video: "https://www.youtube.com/watch?v=vh0G3rJGzzI",
-            category: "Ciencia de Datos",
-            rating: 4.9,
-            offer: false,
-            sales: 2000,
-            price: 19.99,
-            duration: "10 horas",
-            lessons: []
-        },
-        {
-            title: "Análisis de Datos con R",
-            description: "Aprende a analizar y visualizar datos utilizando el lenguaje de programación R.",
-            video: "https://www.youtube.com/watch?v=_V8eKsto3Ug",
-            category: "Ciencia de Datos",
-            rating: 4.7,
-            offer: true,
-            sales: 1500,
-            price: 23.99,
-            duration: "9 horas",
-            lessons: []
-        },
-        {
-            title: "Machine Learning para Principiantes",
-            description: "Introducción a los conceptos clave de machine learning y cómo aplicarlos en proyectos.",
-            video: "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
-            category: "Ciencia de Datos",
-            rating: 4.8,
-            offer: false,
-            sales: 2200,
-            price: 29.99,
-            duration: "14 horas",
-            lessons: []
-        },
-        {
-            title: "Visualización de Datos con Tableau",
-            description: "Aprende a crear visualizaciones impactantes y dashboards interactivos utilizando Tableau.",
-            video: "https://www.youtube.com/watch?v=0SroZ3uOmZE",
-            category: "Ciencia de Datos",
-            rating: 4.6,
-            offer: true,
-            sales: 1300,
-            price: 22.99,
-            duration: "8 horas",
-            lessons: []
-        },
+        
 
         // CATEGORIA DESARROLLO MOVIL
         {
@@ -176,56 +106,34 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 29.99,
             duration: "15 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Introducción a Swift para iOS",
+                    description: "Aprende los conceptos básicos de Swift para desarrollar aplicaciones iOS.",
+                    link: "https://www.youtube.com/watch?v=comQ1-x2a1Q",
+                    duration: "12 horas",
+                },
+                {
+                    title: "Desarrollo de Apps Android con Kotlin",
+                    description: "Domina Kotlin para crear aplicaciones Android eficientes y modernas.",
+                    link: "https://www.youtube.com/watch?v=F9UC9DY-vIU",
+                    duration: "14 horas",
+                },
+                {
+                    title: "Flutter: Desarrollo de Apps Móviles",
+                    description: "Construye aplicaciones móviles nativas con Flutter y Dart.",
+                    link: "https://www.youtube.com/watch?v=fq4N0hgOWzU",
+                    duration: "13 horas",
+                },
+                {
+                    title: "Introducción al Desarrollo Movil Híbrido",
+                    description: "Aprende a desarrollar aplicaciones híbridas utilizando frameworks como Ionic y Cordova.",
+                    link: "https://www.youtube.com/watch?v=r0JRhKc4v9E",
+                    duration: "10 horas",
+                },
+            ]
         },
-        {
-            title: "Introducción a Swift para iOS",
-            description: "Aprende los conceptos básicos de Swift para desarrollar aplicaciones iOS.",
-            video: "https://www.youtube.com/watch?v=comQ1-x2a1Q",
-            category: "Desarrollo Movil",
-            rating: 4.7,
-            offer: false,
-            sales: 1800,
-            price: 24.99,
-            duration: "12 horas",
-            lessons: []
-        },
-        {
-            title: "Desarrollo de Apps Android con Kotlin",
-            description: "Domina Kotlin para crear aplicaciones Android eficientes y modernas.",
-            video: "https://www.youtube.com/watch?v=F9UC9DY-vIU",
-            category: "Desarrollo Movil",
-            rating: 4.9,
-            offer: true,
-            sales: 2200,
-            price: 27.99,
-            duration: "14 horas",
-            lessons: []
-        },
-        {
-            title: "Flutter: Desarrollo de Apps Móviles",
-            description: "Construye aplicaciones móviles nativas con Flutter y Dart.",
-            video: "https://www.youtube.com/watch?v=fq4N0hgOWzU",
-            category: "Desarrollo Movil",
-            rating: 4.8,
-            offer: false,
-            sales: 2000,
-            price: 26.99,
-            duration: "13 horas",
-            lessons: []
-        },
-        {
-            title: "Introducción al Desarrollo Movil Híbrido",
-            description: "Aprende a desarrollar aplicaciones híbridas utilizando frameworks como Ionic y Cordova.",
-            video: "https://www.youtube.com/watch?v=r0JRhKc4v9E",
-            category: "Desarrollo Movil",
-            rating: 4.6,
-            offer: true,
-            sales: 1700,
-            price: 22.99,
-            duration: "10 horas",
-            lessons: []
-        },
+        
 
 
         // CATEGORIA LENGUAJE DE PROGRAMACIÓN
@@ -239,68 +147,40 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 34.99,
             duration: "8 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Aprende Python desde Cero",
+                    description: "Domina Python, uno de los lenguajes de programación más populares y versátiles.",
+                    link: "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+                    duration: "10 horas",
+                },
+                {
+                    title: "Java para Principiantes",
+                    description: "Introduce a los fundamentos de Java, un lenguaje robusto y ampliamente utilizado.",
+                    link: "https://www.youtube.com/watch?v=eIrMbAQSU34",
+                    duration: "12 horas",
+                },
+                {
+                    title: "Programación en C#",
+                    description: "Aprende a desarrollar aplicaciones usando C#, un lenguaje clave para .NET.",
+                    link: "https://www.youtube.com/watch?v=GhQdlIFylQ8",
+                    duration: "11 horas",
+                },
+                {
+                    title: "JavaScript: El Lenguaje de la Web",
+                    description: "Conviértete en un experto en JavaScript, el lenguaje esencial para desarrollo web.",
+                    link: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+                    duration: "9 horas",
+                },
+                {
+                    title: "Master en C++",
+                    description: "Domina C++, un lenguaje poderoso para programación de sistemas y aplicaciones de alto rendimiento.",
+                    link: "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+                    duration: "14 horas",
+                },
+            ]
         },
-        {
-            title: "Aprende Python desde Cero",
-            description: "Domina Python, uno de los lenguajes de programación más populares y versátiles.",
-            video: "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
-            category: "Lenguaje de Programación",
-            rating: 4.9,
-            offer: true,
-            sales: 3000,
-            price: 19.99,
-            duration: "10 horas",
-            lessons: []
-        },
-        {
-            title: "Java para Principiantes",
-            description: "Introduce a los fundamentos de Java, un lenguaje robusto y ampliamente utilizado.",
-            video: "https://www.youtube.com/watch?v=eIrMbAQSU34",
-            category: "Lenguaje de Programación",
-            rating: 4.8,
-            offer: false,
-            sales: 2500,
-            price: 24.99,
-            duration: "12 horas",
-            lessons: []
-        },
-        {
-            title: "Programación en C#",
-            description: "Aprende a desarrollar aplicaciones usando C#, un lenguaje clave para .NET.",
-            video: "https://www.youtube.com/watch?v=GhQdlIFylQ8",
-            category: "Lenguaje de Programación",
-            rating: 4.7,
-            offer: true,
-            sales: 2200,
-            price: 21.99,
-            duration: "11 horas",
-            lessons: []
-        },
-        {
-            title: "JavaScript: El Lenguaje de la Web",
-            description: "Conviértete en un experto en JavaScript, el lenguaje esencial para desarrollo web.",
-            video: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
-            category: "Lenguaje de Programación",
-            rating: 4.9,
-            offer: false,
-            sales: 2800,
-            price: 22.99,
-            duration: "9 horas",
-            lessons: []
-        },
-        {
-            title: "Master en C++",
-            description: "Domina C++, un lenguaje poderoso para programación de sistemas y aplicaciones de alto rendimiento.",
-            video: "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
-            category: "Lenguaje de Programación",
-            rating: 4.8,
-            offer: true,
-            sales: 2400,
-            price: 26.99,
-            duration: "14 horas",
-            lessons: []
-        },
+        
 
         // CATEGORIA DESARROLLO DE VIDEOJUEGO
         {
@@ -313,56 +193,34 @@ export const initialData: SeedData = {
             sales: 3200,
             price: 29.99,
             duration: "20 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Desarrollo de Videojuegos con Unreal Engine",
+                    description: "Domina Unreal Engine para desarrollar videojuegos de alta calidad y realismo.",
+                    link: "https://www.youtube.com/watch?v=gQmiqmxJMtA",
+                    duration: "22 horas",
+                },
+                {
+                    title: "Programación de Videojuegos con C# en Unity",
+                    description: "Aprende a programar mecánicas de juego en C# dentro de Unity, desde cero.",
+                    link: "https://www.youtube.com/watch?v=pwZpJzpE2lQ",
+                    duration: "18 horas",
+                },
+                {
+                    title: "Diseño de Niveles para Videojuegos",
+                    description: "Explora las técnicas y herramientas para crear niveles atractivos y funcionales en videojuegos.",
+                    link: "https://www.youtube.com/watch?v=5YV1cXc4zH0",
+                    duration: "15 horas",
+                },
+                {
+                    title: "Introducción a la Programación de Juegos en 2D",
+                    description: "Aprende a desarrollar videojuegos en 2D con herramientas y lenguajes específicos.",
+                    link: "https://www.youtube.com/watch?v=1qsfNIAjpoA",
+                    duration: "12 horas",
+                },
+            ]
         },
-        {
-            title: "Desarrollo de Videojuegos con Unreal Engine",
-            description: "Domina Unreal Engine para desarrollar videojuegos de alta calidad y realismo.",
-            video: "https://www.youtube.com/watch?v=gQmiqmxJMtA",
-            category: "Desarrollo de Videojuegos",
-            rating: 4.8,
-            offer: false,
-            sales: 2800,
-            price: 34.99,
-            duration: "22 horas",
-            lessons: []
-        },
-        {
-            title: "Programación de Videojuegos con C# en Unity",
-            description: "Aprende a programar mecánicas de juego en C# dentro de Unity, desde cero.",
-            video: "https://www.youtube.com/watch?v=pwZpJzpE2lQ",
-            category: "Desarrollo de Videojuegos",
-            rating: 4.7,
-            offer: true,
-            sales: 2500,
-            price: 27.99,
-            duration: "18 horas",
-            lessons: []
-        },
-        {
-            title: "Diseño de Niveles para Videojuegos",
-            description: "Explora las técnicas y herramientas para crear niveles atractivos y funcionales en videojuegos.",
-            video: "https://www.youtube.com/watch?v=5YV1cXc4zH0",
-            category: "Desarrollo de Videojuegos",
-            rating: 4.6,
-            offer: false,
-            sales: 2100,
-            price: 24.99,
-            duration: "15 horas",
-            lessons: []
-        },
-        {
-            title: "Introducción a la Programación de Juegos en 2D",
-            description: "Aprende a desarrollar videojuegos en 2D con herramientas y lenguajes específicos.",
-            video: "https://www.youtube.com/watch?v=1qsfNIAjpoA",
-            category: "Desarrollo de Videojuegos",
-            rating: 4.8,
-            offer: true,
-            sales: 2300,
-            price: 22.99,
-            duration: "12 horas",
-            lessons: []
-        },
+        
 
         // CATEGORIA BASE DE DATOS
         {
@@ -375,68 +233,40 @@ export const initialData: SeedData = {
             sales: 1100,
             price: 21.99,
             duration: "9 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Fundamentos de Bases de Datos",
+                    description: "Aprende los conceptos esenciales de bases de datos, incluyendo diseño y modelado.",
+                    link: "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                    duration: "10 horas",
+                },
+                {
+                    title: "SQL para Principiantes",
+                    description: "Domina el lenguaje SQL y aprende a consultar y gestionar bases de datos relacionales.",
+                    link: "https://www.youtube.com/watch?v=7S_tz1z_5bA",
+                    duration: "12 horas",
+                },
+                {
+                    title: "Administración de Bases de Datos con MySQL",
+                    description: "Conviértete en un experto en la administración y optimización de bases de datos MySQL.",
+                    link: "https://www.youtube.com/watch?v=EN6Dx22cPRI",
+                    duration: "15 horas",
+                },
+                {
+                    title: "Introducción a MongoDB",
+                    description: "Aprende a trabajar con MongoDB, una de las bases de datos NoSQL más populares.",
+                    link: "https://www.youtube.com/watch?v=ofme2o29ngU",
+                    duration: "11 horas",
+                },
+                {
+                    title: "Diseño y Modelado de Bases de Datos",
+                    description: "Aprende a diseñar y modelar bases de datos de manera eficiente y efectiva.",
+                    link: "https://www.youtube.com/watch?v=ztHopE5Wnpc",
+                    duration: "13 horas",
+                },
+            ]
         },
-        {
-            title: "Fundamentos de Bases de Datos",
-            description: "Aprende los conceptos esenciales de bases de datos, incluyendo diseño y modelado.",
-            video: "https://www.youtube.com/watch?v=HXV3zeQKqGY",
-            category: "Bases de Datos",
-            rating: 4.8,
-            offer: true,
-            sales: 2100,
-            price: 19.99,
-            duration: "10 horas",
-            lessons: []
-        },
-        {
-            title: "SQL para Principiantes",
-            description: "Domina el lenguaje SQL y aprende a consultar y gestionar bases de datos relacionales.",
-            video: "https://www.youtube.com/watch?v=7S_tz1z_5bA",
-            category: "Bases de Datos",
-            rating: 4.9,
-            offer: false,
-            sales: 2800,
-            price: 24.99,
-            duration: "12 horas",
-            lessons: []
-        },
-        {
-            title: "Administración de Bases de Datos con MySQL",
-            description: "Conviértete en un experto en la administración y optimización de bases de datos MySQL.",
-            video: "https://www.youtube.com/watch?v=EN6Dx22cPRI",
-            category: "Bases de Datos",
-            rating: 4.7,
-            offer: true,
-            sales: 2400,
-            price: 29.99,
-            duration: "15 horas",
-            lessons: []
-        },
-        {
-            title: "Introducción a MongoDB",
-            description: "Aprende a trabajar con MongoDB, una de las bases de datos NoSQL más populares.",
-            video: "https://www.youtube.com/watch?v=ofme2o29ngU",
-            category: "Bases de Datos",
-            rating: 4.8,
-            offer: false,
-            sales: 2000,
-            price: 22.99,
-            duration: "11 horas",
-            lessons: []
-        },
-        {
-            title: "Diseño y Modelado de Bases de Datos",
-            description: "Aprende a diseñar y modelar bases de datos de manera eficiente y efectiva.",
-            video: "https://www.youtube.com/watch?v=ztHopE5Wnpc",
-            category: "Bases de Datos",
-            rating: 4.6,
-            offer: true,
-            sales: 1800,
-            price: 21.99,
-            duration: "13 horas",
-            lessons: []
-        },
+        
 
         // CATEGORIA TESTEO DE SOFTWARE
         {
