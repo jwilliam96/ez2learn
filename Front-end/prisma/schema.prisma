@@ -16,7 +16,7 @@ datasource db {
 
 model Categories {
   id       String    @id @default(uuid())
-  category String
+  category String    @unique
   Courses  Courses[]
 }
 

@@ -8,12 +8,23 @@ import imageAprende from "/public/landing/imgAprende.png"
 import imageEnseña from "/public/landing/imgEnseña.png"
 import imageHeader from "/public/landing/header.png"
 import Image from "next/image";
+<<<<<<< HEAD
 
+=======
+import { getCoursesByCategory } from "@/actions/server-actions";
+import { UseSwiper } from "@/components";
+>>>>>>> 140bd5c95f630ea1f61969e71e05cc396fae97de
 
 export default async function Home() {
 
   // const cursos = await prisma.courses.findMany()
   // await prisma.$disconnect();
+<<<<<<< HEAD
+=======
+
+  const courses = await getCoursesByCategory("Desarrollo Web")
+
+>>>>>>> 140bd5c95f630ea1f61969e71e05cc396fae97de
 
   return (
     <main >
@@ -80,7 +91,7 @@ export default async function Home() {
           <h2 className="text-2xl font-bold text-texto-green">Cursos Populares</h2>
           <span className="text-texto-green">Aprende algo nuevo o mejora tus habilidades</span>
 
-          {/* <UseSwiper cursos={dbCursos} dbVideos={dbVideos} id="bf9f838b-c82f-41fd-acfb-29d16389d4e1" /> */}
+          <UseSwiper cursos={courses!} />
 
         </div>
       </section>

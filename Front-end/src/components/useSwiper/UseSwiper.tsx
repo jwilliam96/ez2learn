@@ -9,15 +9,13 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 import { IconFlechaDe, IconFlechaIz } from '../icon/Icons';
 import { Cards } from '../cards/Cards';
-import { Courses, Lessons } from '@prisma/client';
+import { Courses } from '@prisma/client';
 
 interface Props {
-    cursos: Courses
-    dbVideos: Lessons[]
-    id: string
+    cursos: Courses[]
 }
 
-export const UseSwiper = ({ cursos, dbVideos, id }: Props) => {
+export const UseSwiper = ({ cursos }: Props) => {
 
 
     return (
@@ -35,18 +33,18 @@ export const UseSwiper = ({ cursos, dbVideos, id }: Props) => {
                     spaceBetween={50}
                     slidesPerView={4}
                 >
-                    {/* {
+                    {
 
-                        cursos.filter(curso => curso.id_category === id).map(curso => (
+                        cursos.map(curso => (
 
                             <SwiperSlide key={curso.id} style={{ "display": "flex", "justifyContent": "center", }}>
 
-                                <Cards curso={curso} dbVideos={dbVideos} />
+                                <Cards curso={curso} />
 
                             </SwiperSlide>
 
                         ))
-                    } */}
+                    }
 
                 </Swiper>
 

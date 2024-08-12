@@ -6,11 +6,9 @@ import Link from "next/link";
 
 interface Prop {
   curso: Courses
-  dbVideos: Lessons[]
 }
 
-export function Cards({ curso, dbVideos }: Prop) {
-
+export function Cards({ curso }: Prop) {
 
 
   return (
@@ -23,7 +21,7 @@ export function Cards({ curso, dbVideos }: Prop) {
         <div className=" h-40 bg-gray-200 rounded-md border border-gray-300">
           {/* <Image src={imagenVideo}
             alt="Video" priority className="object-cover rounded-md w-full h-full" /> */}
-          {/* <VideoYoutube videoId={video} /> */}
+          <VideoYoutube videoId={curso.video} />
 
 
           {/* ETIQUETA */}
@@ -35,7 +33,7 @@ export function Cards({ curso, dbVideos }: Prop) {
       {/* TITLE  */}
       <div className="grid text-title-card gap-1 h-full">
         <div className="flex justify-between items-center">
-          {/* <h3 className="text-lg font-bold line-clamp-2">{curso.name_curso}</h3> */}
+          <h3 className="text-lg font-bold line-clamp-2">{curso.title}</h3>
 
           {/* <div className=" flex items-center shrink-0">
             <IconTime />
