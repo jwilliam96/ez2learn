@@ -27,6 +27,32 @@ export const initialData: SeedData = {
             sales: 1500,
             price: 19.99,
             duration: "10 horas",
+            lessons: [
+                {
+                    title: "CSS Avanzado: Flexbox y Grid",
+                    description: "Domina las técnicas avanzadas de diseño con CSS, incluyendo Flexbox y Grid.",
+                    link: "https://www.youtube.com/watch?v=J4q5hctO6D4",
+                    duration: "8 horas",
+                },
+                {
+                    title: "JavaScript: De Principiante a Avanzado",
+                    description: "Lleva tus habilidades de JavaScript al siguiente nivel, cubriendo temas desde lo básico hasta conceptos avanzados.",
+                    link: "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+                    duration: "15 horas",
+                },
+                {
+                    title: "Responsive Design con Bootstrap",
+                    description: "Aprende a crear sitios web responsivos utilizando el framework Bootstrap.",
+                    link: "https://www.youtube.com/watch?v=5GcQtLDGXy8",
+                    duration: "7 horas",
+                },
+                {
+                    title: "Desarrollo Web Full Stack con MERN",
+                    description: "Crea aplicaciones web completas utilizando MongoDB, Express, React y Node.js.",
+                    link: "https://www.youtube.com/watch?v=7CqJlxBYj-M",
+                    duration: "20 horas",
+                }
+            ]
         },
         {
             title: "CSS Avanzado: Flexbox y Grid",
@@ -38,6 +64,7 @@ export const initialData: SeedData = {
             sales: 1200,
             price: 24.99,
             duration: "8 horas",
+            lessons: []
         },
         {
             title: "JavaScript: De Principiante a Avanzado",
@@ -49,6 +76,7 @@ export const initialData: SeedData = {
             sales: 3000,
             price: 29.99,
             duration: "15 horas",
+            lessons: []
         },
         {
             title: "Responsive Design con Bootstrap",
@@ -60,6 +88,7 @@ export const initialData: SeedData = {
             sales: 900,
             price: 14.99,
             duration: "7 horas",
+            lessons: []
         },
         {
             title: "Desarrollo Web Full Stack con MERN",
@@ -71,6 +100,7 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 34.99,
             duration: "20 horas",
+            lessons: []
         },
 
         //CATEGORIA CIENCIA DE DATOS
@@ -83,7 +113,8 @@ export const initialData: SeedData = {
             offer: false,
             sales: 1200,
             price: 24.99,
-            duration: "12 horas"
+            duration: "12 horas",
+            lessons: []
         },
         {
             title: "Introducción a Python para Ciencia de Datos",
@@ -95,6 +126,7 @@ export const initialData: SeedData = {
             sales: 2000,
             price: 19.99,
             duration: "10 horas",
+            lessons: []
         },
         {
             title: "Análisis de Datos con R",
@@ -106,6 +138,7 @@ export const initialData: SeedData = {
             sales: 1500,
             price: 23.99,
             duration: "9 horas",
+            lessons: []
         },
         {
             title: "Machine Learning para Principiantes",
@@ -117,6 +150,7 @@ export const initialData: SeedData = {
             sales: 2200,
             price: 29.99,
             duration: "14 horas",
+            lessons: []
         },
         {
             title: "Visualización de Datos con Tableau",
@@ -128,6 +162,7 @@ export const initialData: SeedData = {
             sales: 1300,
             price: 22.99,
             duration: "8 horas",
+            lessons: []
         },
 
         // CATEGORIA DESARROLLO MOVIL
@@ -141,6 +176,7 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 29.99,
             duration: "15 horas",
+            lessons: []
         },
         {
             title: "Introducción a Swift para iOS",
@@ -152,6 +188,7 @@ export const initialData: SeedData = {
             sales: 1800,
             price: 24.99,
             duration: "12 horas",
+            lessons: []
         },
         {
             title: "Desarrollo de Apps Android con Kotlin",
@@ -163,6 +200,7 @@ export const initialData: SeedData = {
             sales: 2200,
             price: 27.99,
             duration: "14 horas",
+            lessons: []
         },
         {
             title: "Flutter: Desarrollo de Apps Móviles",
@@ -174,6 +212,7 @@ export const initialData: SeedData = {
             sales: 2000,
             price: 26.99,
             duration: "13 horas",
+            lessons: []
         },
         {
             title: "Introducción al Desarrollo Movil Híbrido",
@@ -185,6 +224,7 @@ export const initialData: SeedData = {
             sales: 1700,
             price: 22.99,
             duration: "10 horas",
+            lessons: []
         },
 
 
@@ -198,7 +238,8 @@ export const initialData: SeedData = {
             offer: false,
             sales: 2500,
             price: 34.99,
-            duration: "8 horas"
+            duration: "8 horas",
+            lessons: []
         },
         {
             title: "Aprende Python desde Cero",
@@ -210,6 +251,7 @@ export const initialData: SeedData = {
             sales: 3000,
             price: 19.99,
             duration: "10 horas",
+            lessons: []
         },
         {
             title: "Java para Principiantes",
@@ -221,6 +263,7 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 24.99,
             duration: "12 horas",
+            lessons: []
         },
         {
             title: "Programación en C#",
@@ -232,6 +275,7 @@ export const initialData: SeedData = {
             sales: 2200,
             price: 21.99,
             duration: "11 horas",
+            lessons: []
         },
         {
             title: "JavaScript: El Lenguaje de la Web",
@@ -243,6 +287,7 @@ export const initialData: SeedData = {
             sales: 2800,
             price: 22.99,
             duration: "9 horas",
+            lessons: []
         },
         {
             title: "Master en C++",
@@ -254,6 +299,7 @@ export const initialData: SeedData = {
             sales: 2400,
             price: 26.99,
             duration: "14 horas",
+            lessons: []
         },
 
         // CATEGORIA DESARROLLO DE VIDEOJUEGO
@@ -267,6 +313,7 @@ export const initialData: SeedData = {
             sales: 3200,
             price: 29.99,
             duration: "20 horas",
+            lessons: []
         },
         {
             title: "Desarrollo de Videojuegos con Unreal Engine",
@@ -278,6 +325,7 @@ export const initialData: SeedData = {
             sales: 2800,
             price: 34.99,
             duration: "22 horas",
+            lessons: []
         },
         {
             title: "Programación de Videojuegos con C# en Unity",
@@ -289,6 +337,7 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 27.99,
             duration: "18 horas",
+            lessons: []
         },
         {
             title: "Diseño de Niveles para Videojuegos",
@@ -300,6 +349,7 @@ export const initialData: SeedData = {
             sales: 2100,
             price: 24.99,
             duration: "15 horas",
+            lessons: []
         },
         {
             title: "Introducción a la Programación de Juegos en 2D",
@@ -311,6 +361,7 @@ export const initialData: SeedData = {
             sales: 2300,
             price: 22.99,
             duration: "12 horas",
+            lessons: []
         },
 
         // CATEGORIA BASE DE DATOS
@@ -323,7 +374,8 @@ export const initialData: SeedData = {
             offer: false,
             sales: 1100,
             price: 21.99,
-            duration: "9 horas"
+            duration: "9 horas",
+            lessons: []
         },
         {
             title: "Fundamentos de Bases de Datos",
@@ -335,6 +387,7 @@ export const initialData: SeedData = {
             sales: 2100,
             price: 19.99,
             duration: "10 horas",
+            lessons: []
         },
         {
             title: "SQL para Principiantes",
@@ -346,6 +399,7 @@ export const initialData: SeedData = {
             sales: 2800,
             price: 24.99,
             duration: "12 horas",
+            lessons: []
         },
         {
             title: "Administración de Bases de Datos con MySQL",
@@ -357,6 +411,7 @@ export const initialData: SeedData = {
             sales: 2400,
             price: 29.99,
             duration: "15 horas",
+            lessons: []
         },
         {
             title: "Introducción a MongoDB",
@@ -368,6 +423,7 @@ export const initialData: SeedData = {
             sales: 2000,
             price: 22.99,
             duration: "11 horas",
+            lessons: []
         },
         {
             title: "Diseño y Modelado de Bases de Datos",
@@ -379,6 +435,7 @@ export const initialData: SeedData = {
             sales: 1800,
             price: 21.99,
             duration: "13 horas",
+            lessons: []
         },
 
         // CATEGORIA TESTEO DE SOFTWARE
@@ -392,6 +449,7 @@ export const initialData: SeedData = {
             sales: 900,
             price: 17.99,
             duration: "7 horas",
+            lessons: []
         },
         {
             title: "Fundamentos del Testeo de Software",
@@ -403,6 +461,7 @@ export const initialData: SeedData = {
             sales: 1900,
             price: 17.99,
             duration: "8 horas",
+            lessons: []
         },
         {
             title: "Testeo Automatizado con Selenium",
@@ -414,6 +473,7 @@ export const initialData: SeedData = {
             sales: 2200,
             price: 23.99,
             duration: "12 horas",
+            lessons: []
         },
         {
             title: "Introducción a JUnit para Testeo en Java",
@@ -425,6 +485,7 @@ export const initialData: SeedData = {
             sales: 1600,
             price: 19.99,
             duration: "10 horas",
+            lessons: []
         },
         {
             title: "Test Driven Development (TDD) en JavaScript",
@@ -436,6 +497,7 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 24.99,
             duration: "14 horas",
+            lessons: []
         },
         {
             title: "Automatización de Pruebas con Cypress",
@@ -447,6 +509,7 @@ export const initialData: SeedData = {
             sales: 2100,
             price: 22.99,
             duration: "11 horas",
+            lessons: []
         },
 
         // CATEGORIA INGENIERÍA DE SOFTWARE
@@ -459,7 +522,8 @@ export const initialData: SeedData = {
             offer: false,
             sales: 1400,
             price: 26.99,
-            duration: "11 horas"
+            duration: "11 horas",
+            lessons: []
         },
         {
             title: "Fundamentos de Ingeniería de Software",
@@ -471,6 +535,7 @@ export const initialData: SeedData = {
             sales: 2400,
             price: 19.99,
             duration: "10 horas",
+            lessons: []
         },
         {
             title: "Diseño de Software Orientado a Objetos",
@@ -482,6 +547,7 @@ export const initialData: SeedData = {
             sales: 2000,
             price: 24.99,
             duration: "12 horas",
+            lessons: []
         },
         {
             title: "Patrones de Diseño en Ingeniería de Software",
@@ -493,6 +559,7 @@ export const initialData: SeedData = {
             sales: 2600,
             price: 29.99,
             duration: "15 horas",
+            lessons: []
         },
         {
             title: "Ingeniería de Requisitos",
@@ -504,6 +571,7 @@ export const initialData: SeedData = {
             sales: 1800,
             price: 22.99,
             duration: "11 horas",
+            lessons: []
         },
         {
             title: "Gestión de Proyectos de Software con Agile",
@@ -515,6 +583,7 @@ export const initialData: SeedData = {
             sales: 2300,
             price: 26.99,
             duration: "13 horas",
+            lessons: []
         },
 
         // CATEGORIA DE HERRAMIENTAS DE DESARROLLO
@@ -527,7 +596,8 @@ export const initialData: SeedData = {
             offer: true,
             sales: 2100,
             price: 22.99,
-            duration: "6 horas"
+            duration: "6 horas",
+            lessons: []
         },
         {
             title: "Dominando Git y GitHub",
@@ -539,6 +609,7 @@ export const initialData: SeedData = {
             sales: 3000,
             price: 19.99,
             duration: "8 horas",
+            lessons: []
         },
         {
             title: "Docker para Desarrolladores",
@@ -550,6 +621,7 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 24.99,
             duration: "10 horas",
+            lessons: []
         },
         {
             title: "Introducción a Visual Studio Code",
@@ -561,6 +633,7 @@ export const initialData: SeedData = {
             sales: 2200,
             price: 14.99,
             duration: "6 horas",
+            lessons: []
         },
         {
             title: "Automatización de Tareas con Jenkins",
@@ -572,6 +645,7 @@ export const initialData: SeedData = {
             sales: 2000,
             price: 21.99,
             duration: "9 horas",
+            lessons: []
         },
         {
             title: "Introducción a Kubernetes",
@@ -583,6 +657,7 @@ export const initialData: SeedData = {
             sales: 2700,
             price: 29.99,
             duration: "12 horas",
+            lessons: []
         },
 
         // CATEGORIA DE DESARROLLO NO-CODE
@@ -595,7 +670,8 @@ export const initialData: SeedData = {
             offer: false,
             sales: 800,
             price: 14.99,
-            duration: "5 horas"
+            duration: "5 horas",
+            lessons: []
         },
         {
             title: "Introducción a Web flow para Diseño Web No-Code",
@@ -607,6 +683,7 @@ export const initialData: SeedData = {
             sales: 2100,
             price: 22.99,
             duration: "8 horas",
+            lessons: []
         },
         {
             title: "Automatización de Flujos de Trabajo con Zapier",
@@ -618,6 +695,7 @@ export const initialData: SeedData = {
             sales: 1900,
             price: 19.99,
             duration: "7 horas",
+            lessons: []
         },
         {
             title: "Creación de Aplicaciones Móviles con Adalo",
@@ -629,6 +707,7 @@ export const initialData: SeedData = {
             sales: 2500,
             price: 27.99,
             duration: "10 horas",
+            lessons: []
         },
         {
             title: "Construcción de Aplicaciones Web con Bubble",
@@ -640,6 +719,7 @@ export const initialData: SeedData = {
             sales: 2300,
             price: 25.99,
             duration: "12 horas",
+            lessons: []
         },
         {
             title: "Desarrollo de Bases de Datos con Airtable",
@@ -651,6 +731,7 @@ export const initialData: SeedData = {
             sales: 1700,
             price: 21.99,
             duration: "9 horas",
+            lessons: []
         }
     ],
 
