@@ -135,7 +135,6 @@ export const initialData: SeedData = {
         },
         
 
-
         // CATEGORIA LENGUAJE DE PROGRAMACIÓN
         {
             title: "Python para Principiantes",
@@ -279,68 +278,40 @@ export const initialData: SeedData = {
             sales: 900,
             price: 17.99,
             duration: "7 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Fundamentos del Testeo de Software",
+                    description: "Aprende los conceptos básicos de testing, incluyendo tipos de pruebas y procesos.",
+                    link: "https://www.youtube.com/watch?v=URSWYvyc42M",
+                    duration: "8 horas",
+                },
+                {
+                    title: "Testeo Automatizado con Selenium",
+                    description: "Domina Selenium para realizar pruebas automatizadas en aplicaciones web.",
+                    link: "https://www.youtube.com/watch?v=hv3MmtR9F-A",
+                    duration: "12 horas",
+                },
+                {
+                    title: "Introducción a JUnit para Testeo en Java",
+                    description: "Aprende a escribir y ejecutar pruebas unitarias en Java utilizando JUnit.",
+                    link: "https://www.youtube.com/watch?v=HLTxPHZcEbA",
+                    duration: "10 horas",
+                },
+                {
+                    title: "Test Driven Development (TDD) en JavaScript",
+                    description: "Domina el enfoque de desarrollo guiado por pruebas (TDD) en proyectos de JavaScript.",
+                    link: "https://www.youtube.com/watch?v=ILb9-c5j8uI",
+                    duration: "14 horas",
+                },
+                {
+                    title: "Automatización de Pruebas con Cypress",
+                    description: "Aprende a automatizar pruebas end-to-end para aplicaciones web con Cypress.",
+                    link: "https://www.youtube.com/watch?v=7NfM1xQx5pQ",
+                    duration: "11 horas",
+                },
+            ]
         },
-        {
-            title: "Fundamentos del Testeo de Software",
-            description: "Aprende los conceptos básicos de testing, incluyendo tipos de pruebas y procesos.",
-            video: "https://www.youtube.com/watch?v=URSWYvyc42M",
-            category: "Testeo de Software",
-            rating: 4.7,
-            offer: true,
-            sales: 1900,
-            price: 17.99,
-            duration: "8 horas",
-            lessons: []
-        },
-        {
-            title: "Testeo Automatizado con Selenium",
-            description: "Domina Selenium para realizar pruebas automatizadas en aplicaciones web.",
-            video: "https://www.youtube.com/watch?v=hv3MmtR9F-A",
-            category: "Testeo de Software",
-            rating: 4.8,
-            offer: false,
-            sales: 2200,
-            price: 23.99,
-            duration: "12 horas",
-            lessons: []
-        },
-        {
-            title: "Introducción a JUnit para Testeo en Java",
-            description: "Aprende a escribir y ejecutar pruebas unitarias en Java utilizando JUnit.",
-            video: "https://www.youtube.com/watch?v=HLTxPHZcEbA",
-            category: "Testeo de Software",
-            rating: 4.6,
-            offer: true,
-            sales: 1600,
-            price: 19.99,
-            duration: "10 horas",
-            lessons: []
-        },
-        {
-            title: "Test Driven Development (TDD) en JavaScript",
-            description: "Domina el enfoque de desarrollo guiado por pruebas (TDD) en proyectos de JavaScript.",
-            video: "https://www.youtube.com/watch?v=ILb9-c5j8uI",
-            category: "Testeo de Software",
-            rating: 4.9,
-            offer: false,
-            sales: 2500,
-            price: 24.99,
-            duration: "14 horas",
-            lessons: []
-        },
-        {
-            title: "Automatización de Pruebas con Cypress",
-            description: "Aprende a automatizar pruebas end-to-end para aplicaciones web con Cypress.",
-            video: "https://www.youtube.com/watch?v=7NfM1xQx5pQ",
-            category: "Testeo de Software",
-            rating: 4.8,
-            offer: true,
-            sales: 2100,
-            price: 22.99,
-            duration: "11 horas",
-            lessons: []
-        },
+        
 
         // CATEGORIA INGENIERÍA DE SOFTWARE
         {
@@ -353,67 +324,38 @@ export const initialData: SeedData = {
             sales: 1400,
             price: 26.99,
             duration: "11 horas",
-            lessons: []
-        },
-        {
-            title: "Fundamentos de Ingeniería de Software",
-            description: "Aprende los principios y prácticas fundamentales en la ingeniería de software.",
-            video: "https://www.youtube.com/watch?v=VTpdoEKF60w",
-            category: "Ingeniería de Software",
-            rating: 4.7,
-            offer: true,
-            sales: 2400,
-            price: 19.99,
-            duration: "10 horas",
-            lessons: []
-        },
-        {
-            title: "Diseño de Software Orientado a Objetos",
-            description: "Domina los conceptos de diseño orientado a objetos y cómo aplicarlos en proyectos de software.",
-            video: "https://www.youtube.com/watch?v=gj4VwpY9That",
-            category: "Ingeniería de Software",
-            rating: 4.8,
-            offer: false,
-            sales: 2000,
-            price: 24.99,
-            duration: "12 horas",
-            lessons: []
-        },
-        {
-            title: "Patrones de Diseño en Ingeniería de Software",
-            description: "Aprende a implementar patrones de diseño comunes para crear software robusto y escalable.",
-            video: "https://www.youtube.com/watch?v=v9ejT8FO-7I",
-            category: "Ingeniería de Software",
-            rating: 4.9,
-            offer: true,
-            sales: 2600,
-            price: 29.99,
-            duration: "15 horas",
-            lessons: []
-        },
-        {
-            title: "Ingeniería de Requisitos",
-            description: "Descubre cómo capturar, analizar y gestionar los requisitos de software de manera efectiva.",
-            video: "https://www.youtube.com/watch?v=ft4W5nSA3NY",
-            category: "Ingeniería de Software",
-            rating: 4.6,
-            offer: false,
-            sales: 1800,
-            price: 22.99,
-            duration: "11 horas",
-            lessons: []
-        },
-        {
-            title: "Gestión de Proyectos de Software con Agile",
-            description: "Aprende a gestionar proyectos de software utilizando metodologías ágiles como Scrum.",
-            video: "https://www.youtube.com/watch?v=9TycLR0TqFA",
-            category: "Ingeniería de Software",
-            rating: 4.8,
-            offer: true,
-            sales: 2300,
-            price: 26.99,
-            duration: "13 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Fundamentos de Ingeniería de Software",
+                    description: "Aprende los principios y prácticas fundamentales en la ingeniería de software.",
+                    link: "https://www.youtube.com/watch?v=VTpdoEKF60w",
+                    duration: "10 horas",
+                },
+                {
+                    title: "Diseño de Software Orientado a Objetos",
+                    description: "Domina los conceptos de diseño orientado a objetos y cómo aplicarlos en proyectos de software.",
+                    link: "https://www.youtube.com/watch?v=gj4VwpY9That",
+                    duration: "12 horas",
+                },
+                {
+                    title: "Patrones de Diseño en Ingeniería de Software",
+                    description: "Aprende a implementar patrones de diseño comunes para crear software robusto y escalable.",
+                    link: "https://www.youtube.com/watch?v=v9ejT8FO-7I",
+                    duration: "15 horas",
+                },
+                {
+                    title: "Ingeniería de Requisitos",
+                    description: "Descubre cómo capturar, analizar y gestionar los requisitos de software de manera efectiva.",
+                    link: "https://www.youtube.com/watch?v=ft4W5nSA3NY",
+                    duration: "11 horas",
+                },
+                {
+                    title: "Gestión de Proyectos de Software con Agile",
+                    description: "Aprende a gestionar proyectos de software utilizando metodologías ágiles como Scrum.",
+                    link: "https://www.youtube.com/watch?v=9TycLR0TqFA",
+                    duration: "13 horas",
+                },
+            ]
         },
 
         // CATEGORIA DE HERRAMIENTAS DE DESARROLLO
@@ -427,67 +369,38 @@ export const initialData: SeedData = {
             sales: 2100,
             price: 22.99,
             duration: "6 horas",
-            lessons: []
-        },
-        {
-            title: "Dominando Git y GitHub",
-            description: "Aprende a usar Git para el control de versiones y GitHub para colaborar en proyectos.",
-            video: "https://www.youtube.com/watch?v=RGOj5yH7evk",
-            category: "Herramientas de Desarrollo",
-            rating: 4.9,
-            offer: true,
-            sales: 3000,
-            price: 19.99,
-            duration: "8 horas",
-            lessons: []
-        },
-        {
-            title: "Docker para Desarrolladores",
-            description: "Domina Docker y aprende a crear, desplegar y gestionar contenedores en tus proyectos.",
-            video: "https://www.youtube.com/watch?v=3c-iBn73dDE",
-            category: "Herramientas de Desarrollo",
-            rating: 4.8,
-            offer: false,
-            sales: 2500,
-            price: 24.99,
-            duration: "10 horas",
-            lessons: []
-        },
-        {
-            title: "Introducción a Visual Studio Code",
-            description: "Aprende a utilizar Visual Studio Code, uno de los editores de código más populares y potentes.",
-            video: "https://www.youtube.com/watch?v=VqCgcpAypFQ",
-            category: "Herramientas de Desarrollo",
-            rating: 4.7,
-            offer: true,
-            sales: 2200,
-            price: 14.99,
-            duration: "6 horas",
-            lessons: []
-        },
-        {
-            title: "Automatización de Tareas con Jenkins",
-            description: "Aprende a configurar y utilizar Jenkins para automatizar tareas de desarrollo y despliegue.",
-            video: "https://www.youtube.com/watch?v=FxAAJIb5A9I",
-            category: "Herramientas de Desarrollo",
-            rating: 4.8,
-            offer: false,
-            sales: 2000,
-            price: 21.99,
-            duration: "9 horas",
-            lessons: []
-        },
-        {
-            title: "Introducción a Kubernetes",
-            description: "Domina Kubernetes para la orquestación de contenedores y gestión de aplicaciones en la nube.",
-            video: "https://www.youtube.com/watch?v=X48VuDVv0do",
-            category: "Herramientas de Desarrollo",
-            rating: 4.9,
-            offer: true,
-            sales: 2700,
-            price: 29.99,
-            duration: "12 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Dominando Git y GitHub",
+                    description: "Aprende a usar Git para el control de versiones y GitHub para colaborar en proyectos.",
+                    link: "https://www.youtube.com/watch?v=RGOj5yH7evk",
+                    duration: "8 horas",
+                },
+                {
+                    title: "Docker para Desarrolladores",
+                    description: "Domina Docker y aprende a crear, desplegar y gestionar contenedores en tus proyectos.",
+                    link: "https://www.youtube.com/watch?v=3c-iBn73dDE",
+                    duration: "10 horas",
+                },
+                {
+                    title: "Introducción a Visual Studio Code",
+                    description: "Aprende a utilizar Visual Studio Code, uno de los editores de código más populares y potentes.",
+                    link: "https://www.youtube.com/watch?v=VqCgcpAypFQ",
+                    duration: "6 horas",
+                },
+                {
+                    title: "Automatización de Tareas con Jenkins",
+                    description: "Aprende a configurar y utilizar Jenkins para automatizar tareas de desarrollo y despliegue.",
+                    link: "https://www.youtube.com/watch?v=FxAAJIb5A9I",
+                    duration: "9 horas",
+                },
+                {
+                    title: "Introducción a Kubernetes",
+                    description: "Domina Kubernetes para la orquestación de contenedores y gestión de aplicaciones en la nube.",
+                    link: "https://www.youtube.com/watch?v=X48VuDVv0do",
+                    duration: "12 horas",
+                },
+            ]
         },
 
         // CATEGORIA DE DESARROLLO NO-CODE
@@ -501,68 +414,39 @@ export const initialData: SeedData = {
             sales: 800,
             price: 14.99,
             duration: "5 horas",
-            lessons: []
+            lessons: [
+                {
+                    title: "Introducción a Web flow para Diseño Web No-Code",
+                    description: "Aprende a diseñar y construir sitios web sin código utilizando Web flow.",
+                    link: "https://www.youtube.com/watch?v=k9T7-IgK73U",
+                    duration: "8 horas",
+                },
+                {
+                    title: "Automatización de Flujos de Trabajo con Zapier",
+                    description: "Descubre cómo automatizar tareas y flujos de trabajo con Zapier sin escribir código.",
+                    link: "https://www.youtube.com/watch?v=IvPHEhYEOm4",
+                    duration: "7 horas",
+                },
+                {
+                    title: "Creación de Aplicaciones Móviles con Adalo",
+                    description: "Aprende a construir aplicaciones móviles sin código usando Adalo.",
+                    link: "https://www.youtube.com/watch?v=3gRrPccPSzY",
+                    duration: "10 horas",
+                },
+                {
+                    title: "Construcción de Aplicaciones Web con Bubble",
+                    description: "Domina Bubble para crear aplicaciones web complejas sin escribir una sola línea de código.",
+                    link: "https://www.youtube.com/watch?v=9t4ktNNFbh8",
+                    duration: "12 horas",
+                },
+                {
+                    title: "Desarrollo de Bases de Datos con Airtable",
+                    description: "Aprende a crear y gestionar bases de datos utilizando Airtable, una herramienta no-code poderosa.",
+                    link: "https://www.youtube.com/watch?v=7V9m5U5eZ9k",
+                    duration: "9 horas",
+                }
+            ]
         },
-        {
-            title: "Introducción a Web flow para Diseño Web No-Code",
-            description: "Aprende a diseñar y construir sitios web sin código utilizando Web flow.",
-            video: "https://www.youtube.com/watch?v=k9T7-IgK73U",
-            category: "Desarrollo No-Code",
-            rating: 4.8,
-            offer: true,
-            sales: 2100,
-            price: 22.99,
-            duration: "8 horas",
-            lessons: []
-        },
-        {
-            title: "Automatización de Flujos de Trabajo con Zapier",
-            description: "Descubre cómo automatizar tareas y flujos de trabajo con Zapier sin escribir código.",
-            video: "https://www.youtube.com/watch?v=IvPHEhYEOm4",
-            category: "Desarrollo No-Code",
-            rating: 4.7,
-            offer: false,
-            sales: 1900,
-            price: 19.99,
-            duration: "7 horas",
-            lessons: []
-        },
-        {
-            title: "Creación de Aplicaciones Móviles con Adalo",
-            description: "Aprende a construir aplicaciones móviles sin código usando Adalo.",
-            video: "https://www.youtube.com/watch?v=3gRrPccPSzY",
-            category: "Desarrollo No-Code",
-            rating: 4.9,
-            offer: true,
-            sales: 2500,
-            price: 27.99,
-            duration: "10 horas",
-            lessons: []
-        },
-        {
-            title: "Construcción de Aplicaciones Web con Bubble",
-            description: "Domina Bubble para crear aplicaciones web complejas sin escribir una sola línea de código.",
-            video: "https://www.youtube.com/watch?v=9t4ktNNFbh8",
-            category: "Desarrollo No-Code",
-            rating: 4.8,
-            offer: false,
-            sales: 2300,
-            price: 25.99,
-            duration: "12 horas",
-            lessons: []
-        },
-        {
-            title: "Desarrollo de Bases de Datos con Airtable",
-            description: "Aprende a crear y gestionar bases de datos utilizando Airtable, una herramienta no-code poderosa.",
-            video: "https://www.youtube.com/watch?v=7V9m5U5eZ9k",
-            category: "Desarrollo No-Code",
-            rating: 4.6,
-            offer: true,
-            sales: 1700,
-            price: 21.99,
-            duration: "9 horas",
-            lessons: []
-        }
     ],
 
     lessons: [{
