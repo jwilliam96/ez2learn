@@ -17,15 +17,25 @@ export const getCategories = async () => {
     }
 }
 
-export const getCourses = async () => {
+export const getCoursesByCategory = async (category: string) => {
 
     try {
+        const categories = await prisma.categories.findFirst({
+            where: {
+                category: category
+            }
+        })
 
-        const courses = await prisma.courses.findMany()
+        const courses = await prisma.courses.findMany({
+            where: {
+                categoryId: categories?.id
+            }
+        })
 
         return courses
 
+
     } catch (error) {
-        console.log({ message: "no se pudo traer los cursos", error });
+        console.log({ message: "no se pudo traer los cursos" })
     }
 }

@@ -8,23 +8,15 @@ import imageAprende from "/public/landing/imgAprende.png"
 import imageEnseña from "/public/landing/imgEnseña.png"
 import imageHeader from "/public/landing/header.png"
 import Image from "next/image";
-<<<<<<< HEAD
-
-=======
 import { getCoursesByCategory } from "@/actions/server-actions";
 import { UseSwiper } from "@/components";
->>>>>>> 140bd5c95f630ea1f61969e71e05cc396fae97de
 
 export default async function Home() {
 
   // const cursos = await prisma.courses.findMany()
   // await prisma.$disconnect();
-<<<<<<< HEAD
-=======
 
   const courses = await getCoursesByCategory("Desarrollo Web")
-
->>>>>>> 140bd5c95f630ea1f61969e71e05cc396fae97de
 
   return (
     <main >
