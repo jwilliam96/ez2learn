@@ -17,3 +17,15 @@ export const getCategories = async () => {
     }
 }
 
+export const getCourses = async () => {
+
+    try {
+
+        const courses = await prisma.courses.findMany()
+
+        return courses
+
+    } catch (error) {
+        console.log({ message: "no se pudo traer los cursos" })
+    }
+}

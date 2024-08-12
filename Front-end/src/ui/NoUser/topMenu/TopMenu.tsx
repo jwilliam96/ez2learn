@@ -2,11 +2,11 @@ import { CiSearch } from "react-icons/ci"
 import Link from "next/link"
 import { IconLogo } from "@/components"
 import { CartMenu } from "./CartMenu"
-import { getCategories } from "@/actions/server-actions"
+import { getCategories} from "@/actions/server-actions"
 
 export async function TopMenu() {
 
-    const categories = await getCategories()
+    const categories = await getCategories();
 
     return (
         <div className="border-b bg-fondo">
