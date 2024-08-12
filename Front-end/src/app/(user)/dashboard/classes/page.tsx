@@ -1,7 +1,7 @@
-import DashboardCards from "@/components/dashboardUser/DashboardCards";
+import { Catalogo } from "@/ui/User";
 
 export default function Page() {
     return (
-        <DashboardCards />
+        <Catalogo />
     );
 }

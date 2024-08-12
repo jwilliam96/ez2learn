@@ -1,19 +1,17 @@
 
-import { Cursos, Videos } from "@/interface";
+import { Courses, Lessons } from "@prisma/client";
 import VideoYoutube from "../videos/VideoYoutube";
 import Link from "next/link";
 
 
 interface Prop {
-  curso: Cursos
-  dbVideos: Videos[]
+  curso: Courses
+  dbVideos: Lessons[]
 }
 
 export function Cards({ curso, dbVideos }: Prop) {
 
-  const videos: Videos[] = dbVideos.filter(video => video.id_curso === curso.id)
 
-  const video = videos[0].link
 
   return (
 
@@ -25,7 +23,7 @@ export function Cards({ curso, dbVideos }: Prop) {
         <div className=" h-40 bg-gray-200 rounded-md border border-gray-300">
           {/* <Image src={imagenVideo}
             alt="Video" priority className="object-cover rounded-md w-full h-full" /> */}
-          <VideoYoutube videoId={video} />
+          {/* <VideoYoutube videoId={video} /> */}
 
 
           {/* ETIQUETA */}
@@ -37,7 +35,7 @@ export function Cards({ curso, dbVideos }: Prop) {
       {/* TITLE  */}
       <div className="grid text-title-card gap-1 h-full">
         <div className="flex justify-between items-center">
-          <h3 className="text-lg font-bold line-clamp-2">{curso.name_curso}</h3>
+          {/* <h3 className="text-lg font-bold line-clamp-2">{curso.name_curso}</h3> */}
 
           {/* <div className=" flex items-center shrink-0">
             <IconTime />

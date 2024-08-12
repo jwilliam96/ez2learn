@@ -1,11 +1,11 @@
 "use client"
 
-import { Cursos, Videos } from "@/interface"
 import { useCart } from "@/utils/store/cart"
+import { Courses, Lessons } from "@prisma/client"
 
 interface Props {
-    curso: Cursos
-    video: Videos
+    curso: Courses
+    video: Lessons
 
 }
 
@@ -14,7 +14,7 @@ export default function Button({ curso, video }: Props) {
     const agregar = useCart(state => state.agregar)
 
     const handleIncrement = () => {
-        agregar({ id: curso.id, description: curso.description, image: video.link, price: curso.price, title: curso.name_curso })
+        agregar({ id: curso.id, description: curso.description, image: video.link, price: curso.price, title: curso.title })
     }
 
     return (

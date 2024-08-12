@@ -1,5 +1,5 @@
 import Link from "next/link";
-import imagen from "../../../public/landing/imgAprende.png";
+import imagen from "/public/landing/imgAprende.png";
 import Image from "next/image";
 
 export function UserWelcome() {

@@ -2,7 +2,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from "swiper/modules"
-import { Cursos, Videos } from '@/interface';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,10 +9,11 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 import { IconFlechaDe, IconFlechaIz } from '../icon/Icons';
 import { Cards } from '../cards/Cards';
+import { Courses, Lessons } from '@prisma/client';
 
 interface Props {
-    cursos: Cursos[]
-    dbVideos: Videos[]
+    cursos: Courses
+    dbVideos: Lessons[]
     id: string
 }
 
@@ -35,7 +35,7 @@ export const UseSwiper = ({ cursos, dbVideos, id }: Props) => {
                     spaceBetween={50}
                     slidesPerView={4}
                 >
-                    {
+                    {/* {
 
                         cursos.filter(curso => curso.id_category === id).map(curso => (
 
@@ -46,7 +46,7 @@ export const UseSwiper = ({ cursos, dbVideos, id }: Props) => {
                             </SwiperSlide>
 
                         ))
-                    }
+                    } */}
 
                 </Swiper>
 

@@ -1,5 +1,5 @@
+import { CartUser } from "@/ui/User"
 
-import CartUser from "../../ui/CartUser";
 
 function CartUserPage() {
     return (

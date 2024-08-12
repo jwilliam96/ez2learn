@@ -1,5 +1,5 @@
+import { IconBook, IconComment, IconExit, IconHouse, IconLogo, IconOpenBook, IconSetting } from "@/components";
 import Link from "next/link";
-import { IconBook, IconComment, IconExit, IconHouse, IconLogo, IconOpenBook, IconSetting } from "../icon/Icons";
 
 export function Sidebar() {
   return (
