@@ -16,7 +16,7 @@ export interface Courses {
 
 export interface Lessons {
     title: string;
-    link: string;
+    video: string;
     description: string;
     duration?: string;
     documento?: string;

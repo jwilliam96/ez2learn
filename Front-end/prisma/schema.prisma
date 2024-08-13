@@ -40,7 +40,7 @@ model Courses {
 model Lessons {
   id          Int     @id @default(autoincrement())
   title       String
-  link        String
+  video       String
   description String
   duration    String?
   documento   String?
